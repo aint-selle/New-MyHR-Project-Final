@@ -1,0 +1,244 @@
+.wrapper{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+}
+.login-column{
+    width: 100vw;
+    height: 70vh;
+}
+.login-card{
+    width: 100vw;
+    height: 70vh;
+    text-align: center;
+}
+.login-card-body{
+    display: inline-flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 15px 34px 0px rgba(0, 0, 0, 0.10), 0px 61px 61px 0px rgba(0, 0, 0, 0.09), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 245px 98px 0px rgba(0, 0, 0, 0.01), 0px 383px 107px 0px rgba(0, 0, 0, 0.00);
+    /* width: 21vw;
+    height: 41vh; */
+    width: 23vw;
+    height: 45vh;
+    margin-top: 15vh;
+}
+.login-logo-div{
+    text-align: center;
+    height: 30vh;
+    width: 23vmax;
+}
+.login-logo{
+    width: 4vw;
+    height: 10vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-form{
+    height: 100vh;
+    width: 23vmax;
+}
+#login-username{
+    display: inline-flex;
+    margin-top: 24px;
+    width: 19vw;
+    /* height: 48px; */
+    height: 6vh; /* added temporatily - can be removed*/
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    color: #A6A6A6;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid #E2E2E2;
+    background: #F6F6F6;
+}
+#login-password{
+    display: inline-flex;
+    margin-top: 24px;
+    width: 19vw;
+    /* height: 48px; */ /* first design */
+    height: 6vh; /* added temporatily - can be removed*/
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    color: #A6A6A6;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid #E2E2E2;
+    background: #F6F6F6;
+}
+.fa-eye{
+    position: absolute;
+    /* margin-top: 50px; */ /* first design */
+    margin-top: 45px; /* added temporatily - can be removed*/
+    margin-left: -35px;
+    color: #575454;
+}
+.remember-forgot-column{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 20vw;
+    margin-top: 12px;
+    text-align: center;
+}
+.remember-forgot-row{
+    display: flex;
+    text-align: start;
+    width: 20vw;
+}
+.remember-column{
+    width: 10vw;
+}
+.forgot-column{
+    width: 10vw;
+}
+.rememberme-form-check-input{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    /* border: 1px solid rgba(0, 0, 0, 0.15); */
+    border: 1px solid #868686;
+    background: #FFF;
+    margin-left: 0.5vw; /* added temporatily - can be removed*/
+}
+.rememberme-label{
+    display: inline-flex;
+    position: absolute;
+    color: #868686;
+    font-family: 'Uber Move', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    margin-left: 0.5vw;
+}
+.forgot-password-btn{
+    display: flex;
+    color: #3A0CA3;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 16px;
+    background-color: #FFF;
+    border: none;
+    /* margin-left: 4vw; */  /* first design */
+    margin-left: 3.5vw;  /* added temporatily - can be removed*/
+    width: 7vw;  /* added temporatily - can be removed*/
+}
+.login-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: center;
+    margin-top: 24px;
+    color: #FFF;
+    width: 20vw;
+    height: 55px;
+    text-align: center;
+    font-family: 'Uber Move', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    padding: 14px var(--number-values-3, 24px);
+    flex: 1 0 0;
+    border: none;
+    border-radius: var(--number-values-1, 8px);
+    background: var(--style-button-bg-default, #3A0CA3);
+}
+.powered-by-column{
+    width: 100vw;
+    /* margin-top: 62px; */
+    margin-top: 6vh;
+    text-align: center;
+}
+.powered-by-label{
+    color: #E8E8E8;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500px;
+    line-height: 16px;
+}
+.asticom-logo-column{
+    width: 100vw;
+    text-align: center;
+    margin-top: 16px;
+}
+#asticom-logo{
+    /* width: 186px;
+    height: 78px; */
+    width: 10vw;
+    height: 9vh;
+}
+.about-credit-column{
+    width: 100vw;
+    text-align: center;
+    /* margin-top: 33px; */
+    margin-top: 4vh;
+}
+.about-credits-lineseparator{
+    color: #FFF;
+    font-size: 23px;
+    font-weight: 100;
+}
+#aboutbtn{
+    border: none;
+    background-color: transparent;
+    color: #E8E8E8;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 16px;
+}
+#creditsbtn{
+    border: none;
+    background-color: transparent;
+    color: #E8E8E8;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 16px;
+}
+.copyright-column{
+    width: 100vw;
+    text-align: center;
+    margin-top: 8px;
+}
+.copyright-label{
+    color: #E8E8E8;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 16px;
+}

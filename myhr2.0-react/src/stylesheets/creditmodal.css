@@ -1,0 +1,90 @@
+.modal-backdrop {
+    z-index: -1;
+  }
+#creditmodal{
+    background: var(--background-background-state-light-overlay, rgba(255, 255, 255, 0.383));
+    width: 100vw;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+#credittmodaldialog{
+    display: flex;
+    height: 60vh;
+}
+#creditmodalcontent{
+    height: fit-content;
+    margin-top: 15vh;
+    padding: 25px;
+    border-radius: 16px;
+}
+#creditmodalheader{
+    text-align: center;
+    display: inline;
+    border-bottom: none;
+}
+#creditmodalheaderlabel{
+    color: #3A0CA3;
+    font-family: 'Uber Move';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+    margin-top: 0.5vh;
+}
+#creditmodalclosebtn{
+    position: fixed;
+    margin-top: -90px;
+    margin-left: 205px;
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 10px;
+    width: 3px;
+    height: 3px;
+}
+.creditdiv1{
+    background-color: #F6F7FA;
+    margin-top: -0.5vh;
+    padding: 16px;
+}
+.creditdiv2{
+    background-color: #F6F7FA;
+    margin-top: 2vh;
+    padding: 16px;
+}
+.creditdiv3{
+    background-color: #F6F7FA;
+    margin-top: 2vh;
+    padding: 16px;
+}
+#creditpositionlabel{
+    color: #3A0CA3;
+    font-family: 'Uber Move';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+#creditrow{
+    margin-top: 0.5vh;
+}
+#creditsrowleftcol{
+    text-align: start;
+    color: #727272;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+#creditsrowrightcol{
+    text-align: end;
+    color: #727272;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
