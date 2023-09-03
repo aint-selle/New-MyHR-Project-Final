@@ -158,7 +158,8 @@
     align-self: center;
     margin-top: 24px;
     color: #FFF;
-    width: 20vw;
+    /* width: 20vw; */
+    width: 83%;
     height: 55px;
     text-align: center;
     font-family: 'Uber Move', sans-serif;
