@@ -30,7 +30,7 @@ export default function Login(){
                                             <label className="rememberme-label" htmlFor="rememberme-checkbox">Remember me</label>
                                         </div>
                                         <div className="col forgot-column">
-                                            <button type="button" className="forgot-password-btn">Forgot password?</button>
+                                            <button type="button" className="forgot-password-btn" data-bs-toggle="modal" data-bs-target="#forgotpasswordmodal">Forgot password?</button>
                                         </div>
                                     </div>
                                 </div>
@@ -57,6 +57,28 @@ export default function Login(){
                 </div>
             </div>
 {/* -----------------------------------------  modals section ----------------------------------------- */}
+            <div className="modal fade" id="forgotpasswordmodal" tabindex="-1" aria-labelledby="aboutmodalheaderlabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-scrollable" id="forgotpasswordmodaldialog">
+                    <div className="modal-content" id="forgotpasswordmodalcontent">
+                        <div className="modal-header" id="forgotpasswordmodalheader">
+                            <img src={linear_logo} />
+                            <h1 className="modal-title " id="forgotpasswordmodalheaderlabel">Forgot Password</h1>
+                            <button type="button" className="btn-close" id="forgotpasswordmodalclosebtn" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body" id="forgotpasswordmodalbody">
+                            <h3 className="please-confirm-label">Please confirm your Employee ID to proceed.</h3>
+                            <h3 className="enter-empid-label">Enter your Employee ID</h3>
+                            <input type="text" name="employeeid" autoFocus="" autoCapitalize="none" autoComplete="employeeid" required="" id="forgotpassword-employeeid" placeholder="Enter Employee ID"/>
+                            <h3 className="enter-emailaddress-label">Enter your Email Address</h3>
+                            <input type="text" name="username" autoFocus="" autoCapitalize="none" autoComplete="username" required="" id="forgotpassword-emailaddress" placeholder="Username"/>
+
+                        </div>
+                        <div class="modal-footer" id="forgotpasswordmodalfooter">
+                            <button type="button" class="btn btn-primary" id="forgotpasswordconfirmdetailsbtn">Confirm Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="modal fade" id="aboutmodal" tabindex="-1" aria-labelledby="aboutmodalheaderlabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-scrollable" id="aboutmodaldialog">
                     <div className="modal-content" id="aboutmodalcontent">
