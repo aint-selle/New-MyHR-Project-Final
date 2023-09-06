@@ -5,11 +5,18 @@ import '../stylesheets/creditmodal.css';
 import login_logo from '../images/login_logo.png';
 import asticom_logo from '../images/asticom_logo.png';
 import creditbulb from '../images/akar-icons_light-bulb.svg';
-import aboutlogo from '../images/Document  Align Left 14.svg';
 import linear_logo from '../images/solar_password-linear.svg';
+import { useNavigate } from 'react-router-dom';
 // import '../scripts/login_password_script.js';
 
 export default function Login(){
+    
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+      navigate('/Dashboard');
+    };
+
     return(
         <div className='wrapper'>
             <div className='login-first-row'>
@@ -30,11 +37,11 @@ export default function Login(){
                                             <label className="rememberme-label" htmlFor="rememberme-checkbox">Remember me</label>
                                         </div>
                                         <div className="col forgot-column">
-                                            <button type="button" className="forgot-password-btn" data-bs-toggle="modal" data-bs-target="#forgotpasswordmodal">Forgot password?</button>
+                                            <button type="button" className="forgot-password-btn" data-bs-toggle="modal" data-bs-target="#forgotpasswordmodal" >Forgot password?</button>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" className="login-btn">Login</button>
+                                <button type="submit" className="login-btn" onClick={handleButtonClick}>Login</button>
                             </form>
                         </div>
                         <div className='powered-by-column'>
@@ -57,7 +64,7 @@ export default function Login(){
                 </div>
             </div>
 {/* -----------------------------------------  modals section ----------------------------------------- */}
-            <div className="modal fade" id="forgotpasswordmodal" tabindex="-1" aria-labelledby="aboutmodalheaderlabel" aria-hidden="true">
+            <div className="modal fade" id="forgotpasswordmodal" tabindex="-1" aria-labelledby="forgotpasswordmodalheaderlabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-scrollable" id="forgotpasswordmodaldialog">
                     <div className="modal-content" id="forgotpasswordmodalcontent">
                         <div className="modal-header" id="forgotpasswordmodalheader">
@@ -74,7 +81,24 @@ export default function Login(){
 
                         </div>
                         <div class="modal-footer" id="forgotpasswordmodalfooter">
-                            <button type="button" class="btn btn-primary" id="forgotpasswordconfirmdetailsbtn">Confirm Details</button>
+                            <button type="button" class="btn btn-primary" id="forgotpasswordconfirmdetailsbtn" data-bs-toggle="modal" data-bs-target="#confirmationsucess">Confirm Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="confirmationsucess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="confirmationsucessLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
                         </div>
                     </div>
                 </div>
