@@ -8,7 +8,6 @@ export default function Guestlayout(){
             <div className="guestlayout-body">
             <Outlet/>
             </div>
-            
         </div>
     )
 }

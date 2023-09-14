@@ -6,6 +6,7 @@ import login_logo from '../images/login_logo.png';
 import asticom_logo from '../images/asticom_logo.png';
 import creditbulb from '../images/akar-icons_light-bulb.svg';
 import linear_logo from '../images/solar_password-linear.svg';
+import alldone_logo from '../images/ph_seal-check.svg';
 import { useNavigate } from 'react-router-dom';
 // import '../scripts/login_password_script.js';
 
@@ -29,7 +30,7 @@ export default function Login(){
                             <form method="post" className="login-form">
                                 <input type="text" name="username" autoFocus="" autoCapitalize="none" autoComplete="username" required="" id="login-username" placeholder="Username"/>
                                 <input type="password" name="password" autoComplete="current-password" required="" id="login-password" placeholder='Password'/>
-                                <i className="far fa-eye" id="togglePassword"></i>
+                                {/* <i className="far fa-eye" id="togglePassword"></i> */}
                                 <div className="remember-forgot-column">
                                     <div className="row remember-forgot-row">
                                         <div className="col remember-column">
@@ -90,7 +91,8 @@ export default function Login(){
                 <div class="modal-dialog modal-dialog-centered" id="confirmationsucessmodaldialog">
                     <div class="modal-content" id="confirmationsucessmodalcontent">
                         <div class="modal-header" id="confirmationsucessmodalheader">
-                            <h1 class="modal-title" id="confirmationsucessLabel">Confirmation Successful</h1>
+                            <img className='alldone-logo' src={alldone_logo}/>
+                            <h1 class="modal-title" id="confirmationsucessLabel">All Done!</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="confirmationsucesscloseabove"></button>
                         </div>
                         <div class="modal-body" id="confirmationsucessbody">
@@ -177,7 +179,7 @@ export default function Login(){
                                 </div>
                                 <div class="row justify-content-between" id="creditrow">
                                     <div class="col-6" id="creditsrowleftcol">Melaine Aure</div>
-                                    <div class="col-6" id="creditsrowrightcol">Business Analyst</div>
+                                    <div class="col-6" id="creditsrowrightcol">Product Owner</div>
                                 </div>
                             </div>
                             <div className="creditdiv2">
